@@ -1,0 +1,25 @@
+.SeekapLogo {
+  height: 100%;
+  background-color: white;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+.SiteNameFontBox {
+  margin-left: 0.5rem;
+  justify-content: end;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .SiteNameFontBox {
+    display: none;
+  }
+}
+
+.SiteNameFont {
+  margin: 8px 0px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
