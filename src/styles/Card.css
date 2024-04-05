@@ -1,10 +1,39 @@
-.Card{
-    height: 5rem;
-    width: 678px;
-    background-color: rgb(241, 208, 189);
+.Card {
+  height: 7rem;
+  width: 678px;
 
-    padding: 2rem;
+  padding: 2rem;
 
-    border-radius: 1rem;
-    box-shadow: 0px 2px 2px 1px rgba(152, 152, 152,.6);
+  border-radius: 1rem;
+  box-shadow: 0px 2px 4px 0px rgba(152, 152, 152, 0.5);
+}
+
+.Titles {
+  margin-top: 0px;
+  margin-bottom: 8px;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+}
+
+.Description {
+  font-family: Robotom, sans-serif;
+}
+
+.Browse-button {
+  font-family: Robotom, sans-serif;
+  color: white;
+  font-size: 1rem;
+
+  height: 2.5rem;
+  width: 8rem;
+
+  border-style: none;
+  border-radius: 0.5rem;
+  background-color: rgb(212, 74, 0);
+}
+
+.Browse-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }

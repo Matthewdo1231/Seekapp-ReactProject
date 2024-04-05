@@ -1,8 +1,8 @@
-.HomeCards-Container{
-    display: flex;
-    flex-direction: row;
-    margin-top: 1rem;
+.HomeCards-Container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
 
-    justify-content: center;
-    gap: 1rem;
+  justify-content: center;
+  gap: 1rem;
 }
