@@ -1,0 +1,8 @@
+.HomeCards-Container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+
+    justify-content: center;
+    gap: 1rem;
+}
