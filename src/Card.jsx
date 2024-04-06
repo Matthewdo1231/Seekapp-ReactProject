@@ -6,7 +6,6 @@ const Card = ({ children, backgroundColor }) => {
   const cardBG = {
     backgroundColor: backgroundColor || defaultColor,
   };
-  console.log(cardBG);
   return (
     <div style={cardBG} className="Card">
       {children}
