@@ -1,0 +1,37 @@
+[
+  {
+    "jobRole": "Web Developer",
+    "companyName": "MEC NETWORKS CORPORATION",
+    "companyAddress": "Cubao, Metro Manila",
+    "salaryRange": "₱20,000 \u002D ₱25,000 per month",
+    "professionClassification": "Developers/Programmers (Information & Communication Technology)",
+    "perksAndBenefits": "",
+    "datePosted": "1d ago"
+  },
+  {
+    "jobRole": "Fullstack Developer",
+    "companyName": "BSA Solutions Inc.",
+    "companyAddress": "Cebu City, Cebu",
+    "salaryRange": "₱60,000 \u002D ₱80,000 per month",
+    "professionClassification": "Developers/Programmers (Information & Communication Technology)",
+    "perksAndBenefits": [
+      "Great Place to Work",
+      "HMO on Day One with One Dependent",
+      "Professional Development"
+    ],
+    "datePosted": "1d ago"
+  },
+  {
+    "jobRole": "Front End Web Developer",
+    "companyName": "Stealth Solutions and Digital Marketing Inc.",
+    "companyAddress": "Muntinlupa City, Metro Manila",
+    "salaryRange": "",
+    "professionClassification": "Developers/Programmers (Information & Communication Technology)",
+    "perksAndBenefits": [
+      "Attractive salary package",
+      "Health and wellness programs",
+      "A collaborative and innovative work atmosphere"
+    ],
+    "datePosted": "1d ago"
+  }
+]

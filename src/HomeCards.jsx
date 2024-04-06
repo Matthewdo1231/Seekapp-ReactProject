@@ -14,7 +14,10 @@ const HomeCards = () => {
           <p className="Description">
             Browse our React jobs and start your career today
           </p>
-          <CardButton backgroundColor="rgb(60, 60, 60)" />
+          <CardButton
+            backgroundColor="rgb(60, 60, 60)"
+            cardButton="Browse Jobs"
+          />
         </Card>
         <Card>
           <h2 className="Titles">For Employers</h2>

@@ -3,6 +3,9 @@ import "./App.css";
 import Header from "./Header.jsx";
 import Hero from "./Hero.jsx";
 import HomeCards from "./HomeCards.jsx";
+import RecentJobs from "./RecentJobs.jsx";
+import ViewAllJobs from "./ViewAllJobs.jsx";
+import JobListings from "./JobListings.jsx";
 
 const App = () => {
   return (
@@ -10,6 +13,9 @@ const App = () => {
       <Header />
       <Hero />
       <HomeCards />
+      <RecentJobs />
+      <ViewAllJobs />
+      <JobListings />
     </>
   );
 };

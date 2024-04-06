@@ -1,0 +1,16 @@
+.JobPreviewContainer {
+  border: 2px rgb(202, 202, 202) solid;
+  border-radius: 10px;
+
+  width: 28rem;
+  margin-left: auto;
+}
+
+.JobPreviewContainer:hover {
+  cursor: pointer;
+}
+
+.JobPreviewContainer:active {
+  outline: 3px orange solid;
+  border: 2px rgb(255, 255, 255) solid;
+}
