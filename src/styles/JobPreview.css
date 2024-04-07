@@ -4,6 +4,9 @@
 
   width: 28rem;
   margin-left: auto;
+  padding: 1rem;
+
+  font-family: Roboto, sans-serif;
 }
 
 .JobPreviewContainer:hover {
@@ -13,4 +16,54 @@
 .JobPreviewContainer:active {
   outline: 3px orange solid;
   border: 2px rgb(255, 255, 255) solid;
+}
+
+.jobRole {
+  color: rgb(48, 48, 48);
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.companyName {
+  color: rgb(57, 57, 57);
+  font-size: 1.2rem;
+
+  margin-bottom: 1rem;
+}
+
+.companyAddress {
+  color: rgb(57, 57, 57);
+  font-size: 1rem;
+
+  margin-bottom: 0.4rem;
+}
+
+.salaryRange {
+  color: rgb(57, 57, 57);
+  font-size: 1rem;
+
+  margin-bottom: 0.4rem;
+}
+
+.jobClassification {
+  color: rgb(57, 57, 57);
+  font-size: 1rem;
+
+  margin-bottom: 0.4rem;
+}
+
+.perksAndBenefits {
+  color: rgb(57, 57, 57);
+  font-size: 1rem;
+
+  margin-left: 1.2rem;
+  padding-left: 0;
+}
+
+.datePosted {
+  color: rgb(103, 103, 103);
+  font-size: 1rem;
 }

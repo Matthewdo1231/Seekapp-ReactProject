@@ -5,11 +5,24 @@ import jobs from "../jobs.json";
 const JobPreview = () => {
   return (
     <>
-      {jobs.map((job, index) => {
+      {jobs.map((jobObject, index) => {
         return (
           <article className="JobPreviewContainer" key={index}>
-            {Object.keys(job).map((prop, index) => {
-              return <div key={index}>asdasd</div>;
+            {Object.keys(jobObject).map((prop, index) => {
+              if (typeof jobObject[prop] == "object") {
+                return (
+                  <ul className={prop} key={index}>
+                    {jobObject[prop].map((item, index) => {
+                      return <li key={index}>{item}</li>;
+                    })}
+                  </ul>
+                );
+              }
+              return (
+                <div className={prop} key={index}>
+                  {jobObject[prop]}
+                </div>
+              );
             })}
           </article>
         );
