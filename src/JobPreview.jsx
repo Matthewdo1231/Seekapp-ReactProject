@@ -1,14 +1,20 @@
 import React from "react";
 import "./styles/JobPreview.css";
+import jobs from "../jobs.json";
 
 const JobPreview = () => {
   return (
-    <article className="JobPreviewContainer">
-      <div>asdasd</div>
-      <div>asdasd</div>
-      <div>asdasd</div>
-      <div>aasdasd</div>
-    </article>
+    <>
+      {jobs.map((job, index) => {
+        return (
+          <article className="JobPreviewContainer" key={index}>
+            {Object.keys(job).map((prop, index) => {
+              return <div key={index}>asdasd</div>;
+            })}
+          </article>
+        );
+      })}
+    </>
   );
 };
 

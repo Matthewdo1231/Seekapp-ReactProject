@@ -1,6 +1,9 @@
 .JobFullDescriptionContainer {
-  background-color: red;
-  width: 60rem;
+  background-color: rgb(253, 142, 142);
 
+  width: 60rem;
+  height: 30rem;
   margin-right: auto;
+
+  display: inline-block;
 }
