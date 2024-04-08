@@ -9,7 +9,7 @@ const JobPreview = () => {
         return (
           <article className="JobPreviewContainer" key={index}>
             {Object.keys(jobObject).map((prop, index) => {
-              if (typeof jobObject[prop] == "object") {
+              if (prop === "perksAndBenefits" && jobObject[prop] != "") {
                 return (
                   <ul className={prop} key={index}>
                     {jobObject[prop].map((item, index) => {
@@ -17,12 +17,13 @@ const JobPreview = () => {
                     })}
                   </ul>
                 );
+              } else {
+                return (
+                  <div className={prop} key={index}>
+                    {jobObject[prop]}
+                  </div>
+                );
               }
-              return (
-                <div className={prop} key={index}>
-                  {jobObject[prop]}
-                </div>
-              );
             })}
           </article>
         );
