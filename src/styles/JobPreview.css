@@ -13,9 +13,17 @@
   cursor: pointer;
 }
 
-.JobPreviewContainer:active {
+.JobPreviewContainerToggled {
   outline: 3px orange solid;
   border: 2px rgb(255, 255, 255) solid;
+
+  border-radius: 10px;
+
+  width: 28rem;
+  margin-left: auto;
+  padding: 1rem;
+
+  font-family: Roboto, sans-serif;
 }
 
 .jobRole {

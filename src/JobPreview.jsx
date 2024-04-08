@@ -1,13 +1,30 @@
 import React from "react";
 import "./styles/JobPreview.css";
 import jobs from "../jobs.json";
+import { useState } from "react";
 
 const JobPreview = () => {
+  const [toggleHighlight, setToggleHighlight] = useState(false);
+
   return (
     <>
       {jobs.map((jobObject, index) => {
+        const articleId = `article-${index}`;
         return (
-          <article className="JobPreviewContainer" key={index}>
+          <article
+            key={index}
+            id={articleId}
+            onClick={() =>
+              setToggleHighlight((prev) => {
+                return !prev;
+              })
+            }
+            className={
+              toggleHighlight
+                ? "JobPreviewContainerToggled"
+                : "JobPreviewContainer"
+            }
+          >
             {Object.keys(jobObject).map((prop, index) => {
               if (prop === "perksAndBenefits" && jobObject[prop] != "") {
                 return (
