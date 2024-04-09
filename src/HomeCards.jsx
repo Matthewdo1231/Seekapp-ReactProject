@@ -1,4 +1,3 @@
-import React, { Children } from "react";
 import Card from "./Card.jsx";
 import "./styles/HomeCards.css";
 import "./styles/Card.css";
@@ -10,7 +9,7 @@ const HomeCards = () => {
     <section className="HomeCards-Section">
       <div className="HomeCards-Container">
         <Card backgroundColor="rgb(240, 240, 240)">
-          <h2 className="Titles">For Developers</h2>
+          <h2 className="Titles">For Job Seekers</h2>
           <p className="Description">
             Browse our React jobs and start your career today
           </p>

@@ -1,11 +1,9 @@
 import React from "react";
 import "./styles/JobPreview.css";
 import jobs from "../jobs.json";
-import { useState } from "react";
 
-const JobPreview = () => {
-  const [toggleHighlight, setToggleHighlight] = useState("article-0");
-
+const JobPreview = ({ articleHighlighted, setToggleHighlight }) => {
+  console.log(articleHighlighted);
   return (
     <>
       {jobs.map((jobObject, index) => {
@@ -20,7 +18,7 @@ const JobPreview = () => {
               })
             }
             className={
-              articleId == toggleHighlight
+              articleId == articleHighlighted
                 ? "JobPreviewContainerToggled"
                 : "JobPreviewContainer"
             }

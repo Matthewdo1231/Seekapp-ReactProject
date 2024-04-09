@@ -9,6 +9,7 @@
   margin-left: 0.5rem;
   justify-content: end;
   cursor: pointer;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {

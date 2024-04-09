@@ -9,11 +9,8 @@
   font-family: Roboto, sans-serif;
 }
 
+.JobPreviewContainerToggled,
 .JobPreviewContainer:hover {
-  cursor: pointer;
-}
-
-.JobPreviewContainerToggled {
   outline: 3px orange solid;
   border: 2px rgb(255, 255, 255) solid;
 
@@ -24,6 +21,11 @@
   padding: 1rem;
 
   font-family: Roboto, sans-serif;
+  cursor: pointer;
+}
+
+.JobPreviewContainer:hover {
+  outline: 2px orange solid;
 }
 
 .jobRole {

@@ -2,10 +2,13 @@ import React from "react";
 import JobPreview from "./JobPreview";
 import "./styles/JobPreviewList.css";
 
-const JobPreviewList = () => {
+const JobPreviewList = ({ articleHighlighted, setToggleHighlight }) => {
   return (
     <div className="JobPreviewListContainer">
-      <JobPreview />
+      <JobPreview
+        articleHighlighted={articleHighlighted}
+        setToggleHighlight={setToggleHighlight}
+      />
     </div>
   );
 };

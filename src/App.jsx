@@ -1,23 +1,27 @@
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
+
 import React from "react";
+import MainLayout from "./layouts/MainLayout.jsx";
+import Homepage from "./pages/Homepage.jsx";
 import "./App.css";
-import Header from "./Header.jsx";
-import Hero from "./Hero.jsx";
-import HomeCards from "./HomeCards.jsx";
-import RecentJobs from "./RecentJobs.jsx";
-import ViewAllJobs from "./ViewAllJobs.jsx";
-import JobListings from "./JobListings.jsx";
+import JobListingPage from "./pages/JobListingPage.jsx";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<MainLayout />}>
+      <Route index element={<Homepage />} />
+      <Route path="/joblisting" element={<JobListingPage />} />
+    </Route>
+  )
+);
 
 const App = () => {
-  return (
-    <>
-      <Header />
-      <Hero />
-      <HomeCards />
-      <RecentJobs />
-      <ViewAllJobs />
-      <JobListings />
-    </>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;

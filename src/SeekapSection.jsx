@@ -1,16 +1,19 @@
 import React from "react";
 import SeekapLogo from "./assets/images/SeekAppLogo.png";
 import "./styles/SeekapSection.css";
+import { Link } from "react-router-dom";
 
 const SeekapSection = () => {
   return (
     <>
       <section>
-        <img className="SeekapLogo" src={SeekapLogo} />
+        <Link to="/">
+          <img className="SeekapLogo" src={SeekapLogo} />
+        </Link>
       </section>
-      <section className="SiteNameFontBox">
+      <Link className="SiteNameFontBox" to="/">
         <p className="SiteNameFont">Seekapp</p>
-      </section>
+      </Link>
     </>
   );
 };
