@@ -3,7 +3,6 @@ import "./styles/JobPreview.css";
 import jobs from "../jobs.json";
 
 const JobPreview = ({ articleHighlighted, setToggleHighlight }) => {
-  console.log(articleHighlighted);
   return (
     <>
       {jobs.map((jobObject, index) => {

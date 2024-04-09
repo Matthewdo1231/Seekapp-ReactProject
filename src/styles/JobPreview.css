@@ -11,7 +11,7 @@
 
 .JobPreviewContainerToggled,
 .JobPreviewContainer:hover {
-  outline: 3px orange solid;
+  outline: 4px orange solid;
   border: 2px rgb(255, 255, 255) solid;
 
   border-radius: 10px;
