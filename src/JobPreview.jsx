@@ -4,7 +4,7 @@ import jobs from "../jobs.json";
 import { useState } from "react";
 
 const JobPreview = () => {
-  const [toggleHighlight, setToggleHighlight] = useState(false);
+  const [toggleHighlight, setToggleHighlight] = useState("article-0");
 
   return (
     <>
@@ -16,11 +16,11 @@ const JobPreview = () => {
             id={articleId}
             onClick={() =>
               setToggleHighlight((prev) => {
-                return !prev;
+                return (prev = articleId);
               })
             }
             className={
-              toggleHighlight
+              articleId == toggleHighlight
                 ? "JobPreviewContainerToggled"
                 : "JobPreviewContainer"
             }
