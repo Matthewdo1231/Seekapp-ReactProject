@@ -1,20 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-const HomeNav = ({ currentNav, setNav, prevNav }) => {
+const HomeNav = () => {
   return (
     <Link to="/">
-      <button
-        onClick={() =>
-          setNav((newNav) => {
-            prevNav = "Home";
-            return (newNav = "Home");
-          })
-        }
-        className={currentNav == "Home" ? "NavToggled" : "HomeNav"}
-      >
-        Home
-      </button>
+      <button className={"HomeNav"}>Home</button>
     </Link>
   );
 };

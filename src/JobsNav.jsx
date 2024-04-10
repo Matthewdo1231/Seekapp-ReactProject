@@ -1,20 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const JobsNav = ({ currentNav, setNav, prevNav }) => {
+const JobsNav = ({ currentNav }) => {
   return (
     <Link to="/joblisting">
-      <button
-        onClick={() =>
-          setNav((newNav) => {
-            prevNav = "JobsNav";
-            return (newNav = "Jobs");
-          })
-        }
-        className={currentNav == "Jobs" ? "NavToggled" : "JobsNav"}
-      >
-        Jobs
-      </button>
+      <button className={"JobsNav"}>Jobs</button>
     </Link>
   );
 };
