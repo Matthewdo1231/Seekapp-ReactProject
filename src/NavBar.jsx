@@ -5,7 +5,6 @@ import SeekapSection from "./SeekapSection.jsx";
 import HomeNav from "./HomeNav.jsx";
 import JobsNav from "./JobsNav.jsx";
 import AddJobsNav from "./AddJobsNav.jsx";
-import { useState, useEffect } from "react";
 
 const NavBar = () => {
   return (
