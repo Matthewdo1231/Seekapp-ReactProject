@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-const HomeNav = ({ currentPage }) => {
+import { NavLink } from "react-router-dom";
+import "./styles/RightNavBars.css";
+
+const HomeNav = () => {
   return (
-    <Link to="/">
-      <button className={currentPage == "HomePage" ? "NavToggled" : "HomeNav"}>
-        Home
-      </button>
-    </Link>
+    <NavLink to="/" className="Navlink">
+      Home
+    </NavLink>
   );
 };
 

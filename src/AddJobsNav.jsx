@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const AddJobsNav = ({ currentNav }) => {
+const AddJobsNav = () => {
   return (
-    <Link to="/404">
-      <button className={"AddJobsNav"}>Add Job</button>
-    </Link>
+    <NavLink to="/404" className="Navlink">
+      Add Job
+    </NavLink>
   );
 };
 

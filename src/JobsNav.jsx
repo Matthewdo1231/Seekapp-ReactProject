@@ -1,16 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import "./styles/RightNavBars.css";
 
-const JobsNav = ({ currentPage }) => {
+const JobsNav = () => {
   return (
-    <Link to="/joblisting">
-      <button
-        className={currentPage == "JoblistingPage" ? "NavToggled" : "JobsNav"}
-      >
-        Jobs
-      </button>
-    </Link>
+    <NavLink to="/joblisting" className="Navlink">
+      Jobs
+    </NavLink>
   );
 };
 

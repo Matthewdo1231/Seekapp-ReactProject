@@ -1,12 +1,19 @@
 import React from "react";
-import JobPreview from "./JobPreview.jsx";
 import JobFullDescription from "./JobFullDescription";
 import "./styles/JobListing.css";
 import JobPreviewList from "./JobPreviewList.jsx";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const JobListings = () => {
   const [articleHighlighted, setToggleHighlight] = useState("");
+
+  useEffect(() => {
+    console.log(articleHighlighted);
+    return () => {
+      console.log("cleaned up");
+    };
+  }, [articleHighlighted]);
+
   return (
     <div className="JoblistingContainer">
       <JobPreviewList

@@ -13,9 +13,9 @@
   }
 }
 
-.HomeNav,
-.JobsNav,
-.AddJobsNav {
+.Navlink {
+  text-decoration: none;
+
   height: 100%;
   border-style: none;
   background-color: transparent;
@@ -24,23 +24,22 @@
 
   font-size: 1rem;
   font-family: Roboto, sans-serif;
-  margin-right: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.5rem;
 }
 
-.NavToggled,
-.AddJobsNav:hover,
-.JobsNav:hover,
-.HomeNav:hover {
+.Navlink:hover {
   background-color: rgb(212, 74, 0);
-  border-radius: 0.3rem;
-  cursor: pointer;
+}
 
-  height: 100%;
-  border-style: none;
-  color: rgb(255, 255, 255);
-  font-weight: 500;
-
-  font-size: 1rem;
-  font-family: Roboto, sans-serif;
-  margin-right: 1rem;
+.Navlink.active {
+  background-color: rgb(212, 74, 0);
 }
