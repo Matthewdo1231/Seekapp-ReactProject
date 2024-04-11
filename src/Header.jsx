@@ -2,10 +2,10 @@ import React from "react";
 import "./styles/Header.css";
 import NavBar from "./NavBar.jsx";
 
-const Header = () => {
+const Header = ({ currentPage }) => {
   return (
     <div className="header">
-      <NavBar />
+      <NavBar currentPage={currentPage} />
     </div>
   );
 };

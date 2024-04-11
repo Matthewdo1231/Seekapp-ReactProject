@@ -9,7 +9,7 @@ import Header from "../Header.jsx";
 const Homepage = () => {
   return (
     <>
-      <Header />
+      <Header currentPage={"HomePage"} />
       <Hero />
       <HomeCards />
       <RecentJobs />

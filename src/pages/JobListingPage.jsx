@@ -5,7 +5,7 @@ import JobListings from "../JobListings.jsx";
 const JobListingPage = () => {
   return (
     <>
-      <Header />
+      <Header currentPage={"JoblistingPage"} />
       <JobListings />
     </>
   );

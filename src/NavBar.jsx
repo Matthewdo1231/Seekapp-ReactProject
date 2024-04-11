@@ -6,14 +6,15 @@ import HomeNav from "./HomeNav.jsx";
 import JobsNav from "./JobsNav.jsx";
 import AddJobsNav from "./AddJobsNav.jsx";
 
-const NavBar = () => {
+const NavBar = ({ currentPage }) => {
+  console.log(currentPage);
   return (
     <nav className="Navbar">
       <SeekapSection />
       <section className="RightNavbars">
-        <HomeNav />
-        <JobsNav />
-        <AddJobsNav />
+        <HomeNav currentPage={currentPage} />
+        <JobsNav currentPage={currentPage} />
+        <AddJobsNav currentPage={currentPage} />
       </section>
     </nav>
   );

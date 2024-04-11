@@ -2,10 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-const JobsNav = () => {
+const JobsNav = ({ currentPage }) => {
   return (
     <Link to="/joblisting">
-      <button className={"JobsNav"}>Jobs</button>
+      <button
+        className={currentPage == "JoblistingPage" ? "NavToggled" : "JobsNav"}
+      >
+        Jobs
+      </button>
     </Link>
   );
 };
