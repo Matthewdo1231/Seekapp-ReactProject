@@ -11,8 +11,8 @@ const Homepage = () => {
       <Hero />
       <HomeCards />
       <RecentJobs />
-      <ViewAllJobs />
       <JobListings />
+      <ViewAllJobs />
     </>
   );
 };
