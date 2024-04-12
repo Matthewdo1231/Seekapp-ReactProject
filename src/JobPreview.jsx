@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/JobPreview.css";
 import jobs from "../jobs.json";
+import { CiBookmark } from "react-icons/ci";
 
 const JobPreview = ({ articleHighlighted, setToggleHighlight }) => {
   return (
@@ -23,6 +24,16 @@ const JobPreview = ({ articleHighlighted, setToggleHighlight }) => {
             }
           >
             {Object.keys(jobObject).map((prop, index) => {
+              if (prop === "imageFileLocation" && jobObject[prop] != "") {
+                return (
+                  <>
+                    <div className={`${prop}-container`}>
+                      <img className={prop} src={jobObject[prop]} />
+                      <CiBookmark className={`${prop}-flagicon`} />
+                    </div>
+                  </>
+                );
+              }
               if (prop === "perksAndBenefits" && jobObject[prop] != "") {
                 return (
                   <ul className={prop} key={index}>

@@ -1,5 +1,6 @@
 [
   {
+    "imageFileLocation": "./images/1.jpg",
     "jobRole": "Web Developer",
     "companyName": "MEC NETWORKS CORPORATION",
     "companyAddress": "Cubao, Metro Manila",
@@ -9,6 +10,7 @@
     "datePosted": "1d ago"
   },
   {
+    "imageFileLocation": "./images/2.png",
     "jobRole": "Fullstack Developer",
     "companyName": "BSA Solutions Inc.",
     "companyAddress": "Cebu City, Cebu",
@@ -22,6 +24,7 @@
     "datePosted": "1d ago"
   },
   {
+    "imageFileLocation": "./images/3.jpg",
     "jobRole": "Front End Web Developer",
     "companyName": "Stealth Solutions and Digital Marketing Inc.",
     "companyAddress": "Muntinlupa City, Metro Manila",

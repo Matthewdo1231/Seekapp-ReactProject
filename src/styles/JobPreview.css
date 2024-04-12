@@ -28,6 +28,22 @@
   outline: 2px orange solid;
 }
 
+.imageFileLocation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imageFileLocation {
+  width: 6rem;
+}
+
+.imageFileLocation-flagicon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: rgb(54, 54, 54);
+}
+
 .jobRole {
   color: rgb(48, 48, 48);
   font-size: 1.5rem;
