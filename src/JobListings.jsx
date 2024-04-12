@@ -12,12 +12,6 @@ function renderJoblisting(isHome, articleHighlighted) {
 
 const JobListings = ({ isHome }) => {
   const [articleHighlighted, setToggleHighlight] = useState("");
-  useEffect(() => {
-    console.log(articleHighlighted);
-    return () => {
-      console.log("cleaned up");
-    };
-  }, [articleHighlighted]);
 
   return (
     <div className="JoblistingContainer">
