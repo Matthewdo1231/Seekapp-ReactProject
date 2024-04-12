@@ -5,3 +5,11 @@
   margin-top: 4rem;
   gap: 2rem;
 }
+
+.JoblistingContainerHome {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 4rem;
+  gap: 2rem;
+}

@@ -4,9 +4,14 @@ import "./styles/JobListing.css";
 import JobPreviewList from "./JobPreviewList.jsx";
 import { useState, useEffect } from "react";
 
-const JobListings = () => {
-  const [articleHighlighted, setToggleHighlight] = useState("");
+function renderJoblisting(isHome, articleHighlighted) {
+  if (isHome) {
+    return;
+  } else return <JobFullDescription articleHighlighted={articleHighlighted} />;
+}
 
+const JobListings = ({ isHome }) => {
+  const [articleHighlighted, setToggleHighlight] = useState("");
   useEffect(() => {
     console.log(articleHighlighted);
     return () => {
@@ -17,10 +22,11 @@ const JobListings = () => {
   return (
     <div className="JoblistingContainer">
       <JobPreviewList
+        isHome={isHome}
         articleHighlighted={articleHighlighted}
         setToggleHighlight={setToggleHighlight}
       />
-      <JobFullDescription articleHighlighted={articleHighlighted} />
+      {renderJoblisting(isHome, articleHighlighted, setToggleHighlight)}
     </div>
   );
 };

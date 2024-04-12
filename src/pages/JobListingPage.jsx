@@ -4,7 +4,7 @@ import JobListings from "../JobListings.jsx";
 const JobListingPage = () => {
   return (
     <>
-      <JobListings />
+      <JobListings isHome={false} />
     </>
   );
 };

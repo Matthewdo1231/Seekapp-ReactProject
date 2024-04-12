@@ -26,12 +26,10 @@ const JobPreview = ({ articleHighlighted, setToggleHighlight }) => {
             {Object.keys(jobObject).map((prop, index) => {
               if (prop === "imageFileLocation" && jobObject[prop] != "") {
                 return (
-                  <>
-                    <div className={`${prop}-container`}>
-                      <img className={prop} src={jobObject[prop]} />
-                      <CiBookmark className={`${prop}-flagicon`} />
-                    </div>
-                  </>
+                  <div key={index} className={`${prop}-container`}>
+                    <img className={prop} src={jobObject[prop]} />
+                    <CiBookmark className={`${prop}-flagicon`} />
+                  </div>
                 );
               }
               if (prop === "perksAndBenefits" && jobObject[prop] != "") {
