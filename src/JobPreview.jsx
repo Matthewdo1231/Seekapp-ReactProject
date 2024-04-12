@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles/JobPreview.css";
-import jobs from "../jobs.json";
 import { CiBookmark } from "react-icons/ci";
 
 const JobPreview = ({ articleHighlighted, setToggleHighlight }) => {

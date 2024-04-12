@@ -1,40 +1,42 @@
-[
-  {
-    "imageFileLocation": "./images/1.jpg",
-    "jobRole": "Web Developer",
-    "companyName": "MEC NETWORKS CORPORATION",
-    "companyAddress": "Cubao, Metro Manila",
-    "salaryRange": "₱20,000 \u002D ₱25,000 per month",
-    "jobClassification": "Developers/Programmers (Information & Communication Technology)",
-    "perksAndBenefits": "",
-    "datePosted": "1d ago"
-  },
-  {
-    "imageFileLocation": "./images/2.png",
-    "jobRole": "Fullstack Developer",
-    "companyName": "BSA Solutions Inc.",
-    "companyAddress": "Cebu City, Cebu",
-    "salaryRange": "₱60,000 \u002D ₱80,000 per month",
-    "jobClassification": "Developers/Programmers (Information & Communication Technology)",
-    "perksAndBenefits": [
-      "Great Place to Work",
-      "HMO on Day One with One Dependent",
-      "Professional Development"
-    ],
-    "datePosted": "1d ago"
-  },
-  {
-    "imageFileLocation": "./images/3.jpg",
-    "jobRole": "Front End Web Developer",
-    "companyName": "Stealth Solutions and Digital Marketing Inc.",
-    "companyAddress": "Muntinlupa City, Metro Manila",
-    "salaryRange": "",
-    "jobClassification": "Developers/Programmers (Information & Communication Technology)",
-    "perksAndBenefits": [
-      "Attractive salary package",
-      "Health and wellness programs",
-      "A collaborative and innovative work atmosphere"
-    ],
-    "datePosted": "1d ago"
-  }
-]
+{
+  "jobs": [
+    {
+      "imageFileLocation": "./images/1.jpg",
+      "jobRole": "Web Developer",
+      "companyName": "MEC NETWORKS CORPORATION",
+      "companyAddress": "Cubao, Metro Manila",
+      "salaryRange": "₱20,000 \u002D ₱25,000 per month",
+      "jobClassification": "Developers/Programmers (Information & Communication Technology)",
+      "perksAndBenefits": "",
+      "datePosted": "1d ago"
+    },
+    {
+      "imageFileLocation": "./images/2.png",
+      "jobRole": "Fullstack Developer",
+      "companyName": "BSA Solutions Inc.",
+      "companyAddress": "Cebu City, Cebu",
+      "salaryRange": "₱60,000 \u002D ₱80,000 per month",
+      "jobClassification": "Developers/Programmers (Information & Communication Technology)",
+      "perksAndBenefits": [
+        "Great Place to Work",
+        "HMO on Day One with One Dependent",
+        "Professional Development"
+      ],
+      "datePosted": "1d ago"
+    },
+    {
+      "imageFileLocation": "./images/3.jpg",
+      "jobRole": "Front End Web Developer",
+      "companyName": "Stealth Solutions and Digital Marketing Inc.",
+      "companyAddress": "Muntinlupa City, Metro Manila",
+      "salaryRange": "",
+      "jobClassification": "Developers/Programmers (Information & Communication Technology)",
+      "perksAndBenefits": [
+        "Attractive salary package",
+        "Health and wellness programs",
+        "A collaborative and innovative work atmosphere"
+      ],
+      "datePosted": "1d ago"
+    }
+  ]
+}
