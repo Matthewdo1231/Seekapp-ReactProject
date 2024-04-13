@@ -10,6 +10,7 @@ const JobPreviewList = ({ articleHighlighted, setToggleHighlight, isHome }) => {
       }
     >
       <JobPreview
+        isHome={isHome}
         articleHighlighted={articleHighlighted}
         setToggleHighlight={setToggleHighlight}
       />

@@ -1,10 +1,10 @@
 import React from "react";
 import "./styles/JobPreview.css";
 import JobPreviewContent from "./JobPreviewContent.jsx";
-import Spinner from "./Spinner.jsx";
+import JobPreviewLoading from "./JobPreviewLoading.jsx";
 import { useState, useEffect } from "react";
 
-const JobPreview = ({ articleHighlighted, setToggleHighlight }) => {
+const JobPreview = ({ articleHighlighted, setToggleHighlight, isHome }) => {
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState([true]);
 
@@ -22,12 +22,12 @@ const JobPreview = ({ articleHighlighted, setToggleHighlight }) => {
         }
       }
       fetchJob();
-    }, 5000);
+    }, 500);
   }, []);
   return (
     <>
       {loading ? (
-        <Spinner loading={true} />
+        <JobPreviewLoading loading={true} isHome={isHome} />
       ) : (
         <>
           {jobs.map((jobObject, index) => {
