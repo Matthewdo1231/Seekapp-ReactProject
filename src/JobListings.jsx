@@ -2,13 +2,7 @@ import React from "react";
 import JobFullDescription from "./JobFullDescription";
 import "./styles/JobListing.css";
 import JobPreviewList from "./JobPreviewList.jsx";
-import { useState, useEffect } from "react";
-
-function renderJoblisting(isHome, articleHighlighted) {
-  if (isHome) {
-    return;
-  } else return <JobFullDescription articleHighlighted={articleHighlighted} />;
-}
+import { useState } from "react";
 
 const JobListings = ({ isHome }) => {
   const [articleHighlighted, setToggleHighlight] = useState("");
@@ -20,7 +14,9 @@ const JobListings = ({ isHome }) => {
         articleHighlighted={articleHighlighted}
         setToggleHighlight={setToggleHighlight}
       />
-      {renderJoblisting(isHome, articleHighlighted, setToggleHighlight)}
+      {isHome ? null : (
+        <JobFullDescription articleHighlighted={articleHighlighted} />
+      )}
     </div>
   );
 };

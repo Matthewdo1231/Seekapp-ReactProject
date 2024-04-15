@@ -2,6 +2,7 @@ import React from "react";
 import "./styles/JobPreview.css";
 import JobPreviewContent from "./JobPreviewContent.jsx";
 import JobPreviewLoading from "./JobPreviewLoading.jsx";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const JobPreview = ({ articleHighlighted, setToggleHighlight, isHome }) => {
@@ -24,6 +25,7 @@ const JobPreview = ({ articleHighlighted, setToggleHighlight, isHome }) => {
       fetchJob();
     }, 500);
   }, []);
+
   return (
     <>
       {loading ? (
@@ -48,6 +50,11 @@ const JobPreview = ({ articleHighlighted, setToggleHighlight, isHome }) => {
                 }
               >
                 <JobPreviewContent jobObject={jobObject} />
+                {isHome ? (
+                  <Link to={`/joblisting/${jobObject.id}`}>
+                    See full description
+                  </Link>
+                ) : null}
               </article>
             );
           })}
